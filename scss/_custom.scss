@@ -1,0 +1,27 @@
+html {
+    @include box-sizing( border-box );
+}
+
+*,
+*::before,
+*::after {
+    @include box-sizing( inherit );
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Header */
+.encabezado-sitio {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
