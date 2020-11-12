@@ -11,12 +11,17 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
+a {
+    color: $white;
+    text-decoration: none;
+}
 
 /* Header */
 .encabezado-sitio {
@@ -25,3 +30,27 @@ img {
     justify-content: center;
 }
 
+
+/* Navegación */
+.navegacion {
+    background-color: $firstColor;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        li {
+            text-align: center;
+            padding: 1rem 0;
+        }       
+    }
+}

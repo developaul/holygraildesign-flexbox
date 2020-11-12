@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -11,10 +12,16 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
   max-width: 100%;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /* Header */
@@ -22,4 +29,30 @@ img {
   padding: 2rem 0;
   display: flex;
   justify-content: center;
+}
+
+/* Navegación */
+.navegacion {
+  background-color: #05BAE6;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+@media screen and (min-width: 768px) {
+  .navegacion ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navegacion ul li {
+  text-align: center;
+  padding: 1rem 0;
 }
