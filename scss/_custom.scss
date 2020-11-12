@@ -59,6 +59,11 @@ a {
 /* Contenido */
 .sidebar {
     background-color: $secondColor;
+
+    ul {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
 }
 
 .contenido-principal {
@@ -77,4 +82,12 @@ a {
             order: -1;
         }
     }
+}
+
+
+/* Footer */
+.footer {
+    background-color: $thirdColor;
+    color: $white;
+    text-align: center;
 }

@@ -62,6 +62,11 @@ a {
   background-color: #E5E5E5;
 }
 
+.sidebar ul {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
 .contenido-principal {
   max-width: 50%;
   padding-top: 2rem;
@@ -77,4 +82,11 @@ a {
     flex: 0 0 30%;
     order: -1;
   }
+}
+
+/* Footer */
+.footer {
+  background-color: #DB008D;
+  color: #FFFFFF;
+  text-align: center;
 }
