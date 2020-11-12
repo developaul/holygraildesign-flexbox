@@ -1,0 +1,21 @@
+@mixin box-sizing( $border-box ) {
+    box-sizing: $border-box;
+}
+
+@mixin telefone {
+    @media screen and ( min-width: #{ $telefone } ) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and ( min-width: #{ $tablet } ) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and ( min-width: #{ $desktop } ) {
+        @content;
+    }
+}
