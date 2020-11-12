@@ -51,6 +51,30 @@ a {
         li {
             text-align: center;
             padding: 1rem 0;
-        }       
+        }
+    }
+}
+
+
+/* Contenido */
+.sidebar {
+    background-color: $secondColor;
+}
+
+.contenido-principal {
+    max-width: 50%;
+    padding-top: 2rem;
+    margin: 0 auto 2rem auto;
+}
+
+.contenido {
+    @include tablet {
+        display: flex;
+
+        .sidebar {
+            padding: 2rem;
+            flex: 0 0 30%;
+            order: -1;
+        }
     }
 }
